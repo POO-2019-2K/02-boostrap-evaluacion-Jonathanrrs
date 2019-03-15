@@ -24,7 +24,7 @@ export default class Auto {
         cellCostoTotalRentas = renta.getCosto();
 
         this._numeroRentas++;
-        this._totalDias++;
+        this._totalDias = this._totalDias + renta.getNumDias;
 
         this.tableInfo.rows[0].cells[1].innerHTML = this._numeroRentas;
         this.tableInfo.rows[0].cells[2].innerHTML = this._totalDias;
